@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".HomeActivity">
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_welcome"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="25sp" />
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/title_home"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:layout_weight="1"
+        android:background="@color/cardview_light_background"
+        android:hint="Enter Name"
+        android:padding="15sp"
+           />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_height"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/heightFeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@color/cardview_light_background"
+            android:hint="Feets"
+         android:padding="15sp"/>
+        <EditText
+            android:id="@+id/heightInch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@color/cardview_light_background"
+            android:hint="Inches"
+            android:padding="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_weight"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/weightKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@color/cardview_light_background"
+            android:hint="Kg     "
+            android:padding="15sp"/>
+        <EditText
+            android:id="@+id/weightGram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@color/cardview_light_background"
+            android:hint="Grams "
+            android:padding="15sp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_weight="0"
+        android:text=""
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/error" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15sp"
+        android:text="Calculate" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_weight="0"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/error" />
+    <TextView
+        android:id="@+id/weightLoss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_weight="0"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/error" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+         android:layout_weight="1"
+            android:text="@string/title_list" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:text="SignOut" />
+    </LinearLayout>
+
+</LinearLayout>

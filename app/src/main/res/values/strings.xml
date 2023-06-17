@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bmi</string>
+    <string name="title_signin">Let\'s Sign in</string>
+    <string name="title_signup">Let\'s Sign up</string>
+    <string name="title_home">Let\'s Calculate BMI</string>
+    <string name="title_welcome">Welcome</string>
+    <string name="title_list">History of BMI</string>
+    <string name="title_height">Height</string>
+    <string name="title_weight">Weight</string>
+</resources>
